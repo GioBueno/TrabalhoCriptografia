@@ -38,11 +38,11 @@ if __name__ == '__main__':
     value = raw_input('-- Para adicionar um usuario digite I ou para validar um usuaririo digite V\n-- ')
     while value == 'i':
         '-- Insira o login e senha para criar um usuario -- \n'
-        hash = HashCriptografico()
-        hash.update()
+        gerarHash = HashCriptografico()
+        gerarHash.update()
         value = raw_input('-- Para adicionar um usuario digite I ou para validar um usuaririo digite V\n-- ')
     else:
         '-- Autenticar Usuario --\n'
-        hash = HashCriptografico()
-        hash.buscarUsuario()
+        gerarHash = HashCriptografico()
+        gerarHash.buscarUsuario()
 
